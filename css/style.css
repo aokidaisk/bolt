@@ -4,7 +4,7 @@
 /*共通css*/
 
 body {
-	font-family: 'Late';
+	font-family: 'Lato';
 	color: #333;
 }
 
@@ -31,13 +31,27 @@ body {
 	line-height: 30px;
 }
 
+.button {
+	background-color: #74cfae;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+	transition: .3s all;
+}
+
+.button:hover {
+	color: #333;
+}
+
 /*個別css*/
 
 .header-bg {
 	background-color: #fff;
+	left: 0;
+	top: 0;
 	position: fixed;
 	width: 100%;
-	z-index: 10;
+	z-index: 100;
 }
 
 .header-inner {
@@ -49,21 +63,14 @@ body {
 	font-size: 40px;
 }
 
-.header-button--element {
-	background-color: #74cfae;
-	color: #fff;
-	font-size: 12px;
+.header-button {
 	float: right;
 	padding: 14px 12px;
-	transition: .3s all;
-}
-
-.header-button--element:hover {
-	color: #333;
 }
 
 .wrapper {
 	background-color: #f2f2f2;
+	padding-top: 70px;
 	width: 100%;
 }
 
@@ -75,12 +82,12 @@ body {
 	color: #74cfae;
 	font-size: 90px;
 	font-weight: 700;
-	margin-bottom: 20px;
 }
 
 .intro_content {
 	color: #c0c0c0;
 	font-size: 30px;
+	margin-top: 20px;
 }
 
 .sp-article {
@@ -94,18 +101,18 @@ body {
 
 .sp-article_img {
 	float: left;
-	margin-left: 92px;
+	padding-left: 92px;
 	width: 208px;
 }
 
 .sp-article_text {
 	float: left;
-	margin-left: 50px;
-	width: 750px;
+	margin-left: 100px;
+	width: 680px;
 }
 
-.sp-artical_title {
-	margin-bottom: 35px;
+.sp-article_exp {
+	margin-top: 35px;
 }
 
 .img-box {
@@ -147,21 +154,12 @@ body {
 .img-box_content {
 	float: left;
 	margin: 0 90px;
-	width: 670px;
+	width: 570px;
 }
 
 .img-box_button {
-	background-color: #74cfae;
-	box-sizing: content-box;
-	color: #fff;
 	float: left;
-	font-size: 12px;
 	padding: 14px 20px;
-	transition: .3s all;
-}
-
-.img-box_button:hover {
-	color: #333;
 }
 
 .circle-table {
@@ -182,15 +180,18 @@ body {
 }
 
 .circle-table_cell {
-	color: #fff;
 	float: left;
-	font-size: 16px;
-	line-height: 30px;
 	margin-left:180px;
 }
 
 .circle-table_cell:first-child {
-	margin-left: 0;
+	margin-left: 36px;
+}
+
+.circle-table_exp {
+	color:#fff;
+	font-size: 16px;
+	margin-top: 20px;
 }
 
 .icon-table {
@@ -207,7 +208,7 @@ body {
 }
 
 .icon-table ul li {
-	display: inline;
+	display: inline-block;
 }
 
 .icon-cell {
@@ -230,9 +231,9 @@ body {
 
 .footer_inner {
 	padding: 20px 0 25px;
+	text-align: right;
 }
 
 .footer_text {
 	color: #fff;
-	float: right;
 }
